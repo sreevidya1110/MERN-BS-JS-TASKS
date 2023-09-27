@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+    <style>
+        form{
+            margin-top:100px;
+            border:1px solid black;
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="1st">1st Number:</label></td>
+                    <td><input id="i2" type="number" name="1st"/></td>
+                </tr>
+                <tr>
+                    <td><label for="2nd">2nd Number:</label></td>
+                    <td><input id="i3" type="number" name="2nd"/></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="multiply()">Multiply</button></td>
+                    <td><button type="button" onclick="divide()">Divide</button></td>
+                </tr>
+            </table>
+        <div>
+            <p>The Result Is:</p>
+            <p id="i1"></p>
+        </div>
+    </form>
+</center>
+<script>
+    function multiply(){
+        let a=document.getElementById("i2").value;
+        let b=document.getElementById("i3").value;
+        let c=a*b;
+        document.getElementById("i1").innerHTML=c;
+
+    }
+    function divide(){
+        let a=document.getElementById("i2").value;
+        let b=document.getElementById("i3").value;
+        let c=a/b;
+        document.getElementById("i1").innerHTML=c;
+
+    }
+
+</script>
+</body>
+</html>
